@@ -1,0 +1,50 @@
+* {
+    font-family: Microsoft JhengHei;
+}
+
+h1,h2,h3,h4,h5,h6 ,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-weight: bold;
+}
+
+.btn-cart{
+    /* background-color: transparent; */
+    /* 讓icon背景變透明 */
+    position: relative;
+}
+
+.btn-cart .badge{
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.jumbotron-bg{
+    background-image: url("https://images.unsplash.com/photo-1528527190701-6f996cf5719a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+}
+.bg-lighter{
+    background-color: rgba(255, 255, 255, .65);
+}
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    transition: box-shadow .3s;
+}
+.box-shadow:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .24)
+}
+.btn.disabled{
+    pointer-events: none;
+}
+/* 目前不用這個語法，也可以作用 */
+
+.btn:focus { 
+    box-shadow: none;
+} 
+/* 取消點選按鈕後的藍色框框 */
+
