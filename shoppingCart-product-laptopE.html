@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凱凱的3C賣場</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <!-- headers -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="shoppingCart.html">
+            凱凱的3C賣場
+        </a>
+        <!-- 購物車內的數量 (Button 內包含 icon, 數量 badge) -->
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                <i class="fas fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger">2</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px" data-offset="400">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 筆電A 1 台">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">筆電A</td>
+                                <td class="align-middle">1 台</td>
+                                <td class="align-middle text-right">$20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 無線耳機A 1 副">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">無線耳機A</td>
+                                <td class="align-middle">1 副</td>
+                                <td class="align-middle text-right">$4,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="shoppingCart-checkout.html" class="btn btn-primary btn-block">
+                        <i class="fas fa-cart-plus"></i> 結帳去
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent pl-0">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item"><a href="shoppingCart.html">筆電</a></li>
+                <li class="breadcrumb-item active" aria-current="page">筆電E</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sticky-top" style="top: 10px;">
+                    <h1 class="h2">筆電E
+                        <!-- <small class="text-muted h3">副標題</small> -->
+                    </h1>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <del class="text-muted">售價 $25,000</del>
+                        <!-- 沒有特價時，要把del改成span -->
+                        <div class=" ml-auto mb-0 text-danger ">
+                            <small class="h3">特價 NT$</small>
+                            <strong class="h3">20,000</strong>
+                        </div>
+                    </div>
+                    <hr> 
+                    <div class="input-group mt-3">
+                        <select name="" id="" class="form-control mr-1">
+                            <option value="1">1 台</option>
+                            <option value="2">2 台</option>
+                            <option value="3">3 台</option>
+                        </select>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart text-white" aria-hidden="true"></i> 加入購物車
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-end text-secondary mt-1">
+                        <i class="fab fa-cc-visa mr-1" aria-hidden="true"></i>
+                        <i class="fab fa-cc-jcb mr-1" aria-hidden="true"></i>
+                        <i class="fab fa-cc-paypal" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 ">
+                <h2>輕薄的筆電無人能敵</h2>
+                <p class="card-text">
+                    <ul>
+                        <li>處理器：Intel® Core™ i7-10750H Processor 2.6 GHz</li>
+                        <li>記憶體：16GB DDR4 on board</li>
+                        <li>硬碟：512GB M.2 NVMe™ PCIe® 3.0 SSD</li>
+                        <li>獨立顯卡：Nvidia GeForce GTX 1660Ti 6G獨顯</li>
+                        <li>螢幕：15.6" FHD IPS 1920x1080 薄邊框螢幕</li>
+                        <li>無線網路：WIFI6(GIG+)(11AX)2*2+ Bluetooth 5.0</li>
+                        <li>光碟機： 無</li>
+                        <li>介面：HDMI、Thunderbolt™ 3</li>
+                        <li>電池：76WHrs, 4S1P, 4-cell Li-ion</li>
+                        <li>重量：1.9 KG</li>
+                        <li>厚度：1.89cm</li>
+                        <li>作業系統：Windows 10 (64bit)</li>
+                        <li>保固：2年全球保固 + 首年免預付完美保固</li>
+                    </ul>
+                </p>
+
+                <h3 class=" text-center mt-5">筆電E</h3>
+                <img class="img-fluid  w-100" src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1372&q=80"  alt="">
+
+                
+                <div class="alert alert-secondary mt-4" role="alert">
+                    <h2 class="text-center">購物說明</h2>
+                    <p>凱凱的3C賣場線上購物的消費者，都可以依照消費者保護法的規定，享有商品貨到次日起七天猶豫期的權益。但猶豫期並非試用期，請留意，您所退回的商品必須回復原狀（須回復至商品到貨時的原始狀態）並且保持完整包裝（包括商品本體、配件、贈品、保證書、原廠包裝及所有附隨文件或資料的完整性），切勿缺漏任何配件或損毀原廠外盒。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2021 凱凱的3C賣場</li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Instagrame</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            
+        </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">刪除商品</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否確認刪除商品</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-outline-danger px-5">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+
+                var modal = $(this)
+                modal.find('.modal-title').text('確認' + title) // 寫入資料
+            })
+        });
+    </script>
+</body>
+
+</html>
